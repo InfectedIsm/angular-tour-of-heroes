@@ -8,6 +8,7 @@ h1 {
 }
 h2, h3 {
   color: #444;
+
   font-weight: lighter;
 }
 h3 {
@@ -15,12 +16,13 @@ h3 {
 }
 body {
   padding: .5rem;
-  max-width: 1000px;
+  
   margin: auto;
 }
 @media (min-width: 600px) {
   body {
-    padding: 2rem;
+    padding: 1rem;
+    background-color: #fafafa;
   }
 }
 body, input[text] {
@@ -87,3 +89,14 @@ Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at https://angular.io/license
 */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/*SideNav Style*/
+
+
+.mat-drawer-inner-container {
+  background-color:rgb(45, 108, 245); 
+}
+
+

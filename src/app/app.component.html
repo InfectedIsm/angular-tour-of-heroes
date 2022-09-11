@@ -1,8 +1,21 @@
-<h1>{{title}}</h1>
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
+<mat-toolbar class="app-toolbar">
+  <app-header></app-header>
+</mat-toolbar>
+<mat-sidenav-container>
+  
+  <mat-sidenav opened #sidenav="matSidenav" mode="push" >
+    <nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/heroes">Heroes</a>
+    </nav>
+  </mat-sidenav>
 
-  <a routerLink="/heroes">Heroes</a>
-</nav>
-<router-outlet></router-outlet>
-<app-messages></app-messages>
+  <mat-sidenav-content>
+
+   
+    <router-outlet></router-outlet>
+    <app-messages></app-messages>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

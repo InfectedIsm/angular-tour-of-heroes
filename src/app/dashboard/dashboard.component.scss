@@ -1,8 +1,6 @@
 /* DashboardComponent's private CSS styles */
 
-h2 {
-  text-align: center;
-}
+
 
 .heroes-menu {
   padding: 0;
@@ -42,7 +40,7 @@ a {
 @media (min-width: 600px) {
   a {
     width: 18%;
-    box-sizing: content-box;
+    box-sizing: border-box;
   }
 }
 

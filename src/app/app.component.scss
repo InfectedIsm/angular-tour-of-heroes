@@ -1,0 +1,59 @@
+/* AppComponent's private CSS styles */
+
+nav a {
+  text-decoration: none;
+  color: whitesmoke;
+
+  padding: 1rem;
+  margin-top: 0px;
+  margin-right: 0px;
+  display: inline-block;
+  background-color:transparent;
+  /* flexbox */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;
+
+}
+
+nav a:hover {
+  color: white;
+  background-color: #42545C;
+}
+nav a:active {
+  background-color: black;
+}
+
+.app-toolbar {
+  display: inline-block;
+  position: sticky;
+  position: -webkit-sticky; /* For macOS/iOS Safari */
+  top: 0; /* Sets the sticky toolbar to be on top */
+  z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}
+
+mat-toolbar{
+  box-sizing: content-box;
+  padding: 0px;
+}
+
+mat-sidenav-container {
+  height: 100%;
+  
+}
+
+mat-sidenav-content {
+  padding: 0.5rem;
+  
+}
+
+mat-sidenav {
+  border-radius: 2px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 20%;
+}
+
